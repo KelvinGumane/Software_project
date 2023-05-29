@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+*/{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: auto;
+    width: auto ;
+
+}
+
+header >.head{
+ height: auto;
+ width: auto;
+
+
+/*add flexbox style*/
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ flex-flow: wrap;
+} 
+
+.box{
+   width: 20%;
+   height: 200px;
+   margin: 10px;
+   box-sizing: border-box;
+   color:white;  
+}
+
+.box > p{
+  color: black;
+}
+
+
+
+menu#menu{
+  text-align: left;
+  display: block;
+  color: rgb(198, 121, 121);
+  background-color: black;
+  padding: 10px;
+
+  
+  
+}
+
+
+#menu > ul > li{
+  list-style: none;
+  display: inline-block;
+  margin: 10px;
+}
+
+#menu > ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+
+#menu > ul > li >a:hover{
+  color:rgba(232, 14, 14, 0.468)
+}
+
+main{
+  height: 50vh;
+  width: 50vw;
+  background-color:white;
+  margin: auto;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+main > .shopnow{
+  background-image: url(../images/SHOPNOW.jpg);
+  background-color:white;
+  background-size: cover;
+  background-position: center center;
+  height: 300px;
+}
+
+main > .shopnow > p {
+  text-align: center;
+  padding-top: 50%;
+}
+
+main > .shopnow > button{
+  display: block;
+  cursor: pointer;
+  justify-content: center;
+  margin: 0 auto;
+  padding:10px 20px;
+  border-radius: 5px;
+}
+
+main > .shopnow2 {
+  background-image: url(../images/shopnow2.jpg);
+  background-color:white;
+  background-size: cover;
+  background-position: center center;
+  height: 300px;
+}
+
+main > .shopnow2 > p {
+  text-align: center;
+  padding-top: 50%;
+}
+
+main > .shopnow2 > button{
+  display: block;
+  cursor: pointer;
+  justify-content: center;
+  margin: 0 auto;
+  padding:10px 20px;
+  border-radius: 5px;
+}
+
+main >.shopnow3 {
+  background-image: url(../images/shopnow3.jpg);
+  background-color: white;
+  background-size: cover;
+  background-position:center center;
+  height: 300px;
+}
+
+main > .shopnow3 > p {
+  text-align: center;
+  padding: 50px;
+}
+
+main > .shopnow3 > button {
+  display: block;
+  cursor: pointer;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+main > .shopnow4 {
+  background-image: url(../images/shopnow4.jpg);
+  background-color:white;
+  background-size: cover;
+  background-position: center center;
+  height: 250px;
+}
+
+main > .shopnow4 > p {
+  text-align: center;
+  padding: 50px;
+}
+
+main > .shopnow4 > button {
+  display: block;
+  cursor: pointer;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+

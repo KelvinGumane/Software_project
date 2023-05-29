@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    body{
+        background-image: linear-gradient(to bottom, rgba(219, 143, 72, 0.187),rgb(74, 39, 39));
+    }
+
+    section#registration{
+        width: 80vw;
+    }
+
+    section#registration > div#images{
+        background-image: url(../images/pexels-suzy-hazelwood-3652103.jpg);
+        background-size: cover;
+        background-position: center center;
+        float:left;
+        width: 40%;
+        height: 100%;
+
+    }
+    section#registration > div#formulario{
+        text-align: center;
+    }
+    
+
+    section#registration > div#formulario{
+        float: right;
+        width: 60%;
+    }
+
+    div.submit > input{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 100%;
+        width: 50%;
+        cursor: pointer;
+     }
+
+     form > a.botao{
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px;
+        margin: 50px;
+        background-color: rgba(192, 199, 255, 0.219);
+        border-radius: 5px;
+        
+    }
+}
+
+@media screen and (min-width:992px) {
+    body{
+        background-image: linear-gradient(to bottom, rgba(219, 143, 72, 0.187),rgb(74, 39, 39));
+    }
+
+    section#registration{
+        width: 80vw;
+    }
+
+    section#registration > div#images{
+        background-image: url(../images/pexels-karolina-grabowska-4021773.jpg);
+        background-size: cover;
+        background-position: center center;
+        float:left;
+        width: 40%;
+        height: 100%;
+
+    }
+
+    section#registration > div#formulario{
+        float: right;
+        width: 60%;
+    }
+
+    section#registration > div#formulario{
+        text-align: center;
+    }
+
+    div.submit > input{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 100%;
+        width: 50%;
+        cursor: pointer;
+    }
+    form > a.botao{
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px;
+        margin: 50px;
+        background-color: rgba(192, 199, 255, 0.219);
+        border-radius: 5px;
+        
+    }
+    
+
+   
+    
+}
+
