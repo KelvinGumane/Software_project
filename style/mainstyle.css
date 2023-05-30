@@ -1,4 +1,19 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+/*font-family: 'Open Sans', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Pangolin&display=swap');
+/*font-family: 'Pangolin', cursive; */
+
+:root{
+    --cor0:#E0BF23;
+    --cor2:#47F0AF;
+    --cor3:#370D94;
+     --cor4:#A541E0;
+     --cor5:#E06E35;
+  }
+  
 */{
     margin: 0px;
     padding: 0px;

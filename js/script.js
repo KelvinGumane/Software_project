@@ -1,3 +1,5 @@
+const { BlockList } = require('net')
+
 function validateEmail(){
     let email = document.getElementById('email')
 
@@ -130,3 +132,9 @@ app.listen(port, () => {
 
 
 //main page
+
+//shopbutton
+function shopbutton(){
+    let shopb = document.querySelector('shopb')
+    location.href ='shop.html'   
+}

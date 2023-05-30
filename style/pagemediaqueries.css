@@ -1,5 +1,22 @@
 @charset "UTF-8";
 
-@media screen and (min-width:768px) and (max-width:992px){
-    
+:root{
+    --cor0:#E0BF23;
+    --cor2:#47F0AF;
+    --cor3:#370D94;
+     --cor4:#A541E0;
+     --cor5:#E06E35;
+  }
+  
+
+@media screen and (max-width:768px){
+    .nav_bar > ul > li > a {
+        display: block;
+        color: white;
+        font-size: 15px;
+        padding:5px ;
+        border-radius: 50px;
+        transition: 0.2s;
+        margin:0 5px;
+      }
 }
