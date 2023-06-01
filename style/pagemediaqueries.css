@@ -10,6 +10,8 @@
   
 
 @media screen and (max-width:768px){
+  
+
     .nav_bar > ul > li > a {
         display: block;
         color: white;
@@ -19,4 +21,5 @@
         transition: 0.2s;
         margin:0 5px;
       }
+      
 }

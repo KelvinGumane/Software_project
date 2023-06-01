@@ -36,7 +36,7 @@ header {
  display: flex;
  align-items: center;
  justify-content: space-between;
- padding: 0 100px;
+ padding: 0 10px;
 } 
 
 .logo{
@@ -73,24 +73,9 @@ header {
 
 }
 
-
-.box{
-   width: 20%;
-   height: 200px;
-   margin: 10px;
-   box-sizing: border-box;
-   color:white;  
-}
-
-.box > p{
-  color: black;
-}
-
-
-
 main{
   height: 50vh;
-  width: 50vw;
+  width: 95vw;
   background-color:white;
   margin: auto;
   padding: 5px;
@@ -99,28 +84,32 @@ main{
 
 main > .shopnow{
   background-image: url(../images/SHOPNOW.jpg);
-  background-color:white;
+  background-coloR:var(--cor4);
   background-size: cover;
   background-position: center center;
   height: 300px;
+  
 }
 
 main > .shopnow > p {
   text-align: center;
-  padding-top: 50%;
+  padding-top: 20%;
+  font-weight: Bold;
 }
 
 main > .shopnow > button{
   display: block;
   cursor: pointer;
   justify-content: center;
-  margin: 0 auto;
+  margin: 2px auto;
   padding:10px 20px;
   border-radius: 5px;
+  color: white;
+  background-color: black;
 }
 
 main > .shopnow > button:hover{
-  color: black;
+  background-color: var(--cor3);
 }
 
 main > .shopnow2 {
@@ -133,7 +122,8 @@ main > .shopnow2 {
 
 main > .shopnow2 > p {
   text-align: center;
-  padding-top: 50%;
+  padding-top: 20%;
+  font-weight: bold;
 }
 
 main > .shopnow2 > button{
@@ -143,6 +133,12 @@ main > .shopnow2 > button{
   margin: 0 auto;
   padding:10px 20px;
   border-radius: 5px;
+  color: white;
+  background-color: black;
+}
+
+main > .shopnow2 > button:hover {
+  background-color: var(--cor3);
 }
 
 main >.shopnow3 {
@@ -155,7 +151,8 @@ main >.shopnow3 {
 
 main > .shopnow3 > p {
   text-align: center;
-  padding: 50px;
+  padding-top: 20%;
+  font-weight: bold;
 }
 
 main > .shopnow3 > button {
@@ -165,6 +162,12 @@ main > .shopnow3 > button {
   margin: 0 auto;
   padding: 10px 20px;
   border-radius: 5px;
+  color: white;
+  background-color: black;
+}
+
+main > .shopnow3 > button:hover{
+  background-color: var(--cor3);
 }
 
 main > .shopnow4 {
@@ -177,7 +180,7 @@ main > .shopnow4 {
 
 main > .shopnow4 > p {
   text-align: center;
-  padding: 50px;
+  padding-top: 20%;
 }
 
 main > .shopnow4 > button {
@@ -196,3 +199,85 @@ main > .shopnow4 > button:hover{
 }
 
 
+/*
+ shop cart main page 
+.container{
+  margin: auto;
+  transition: 0.5s;
+  text-align: center;
+}
+
+.container > h1 {
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    margin-top: 50px;
+   
+}
+
+
+.container > .shopping{
+  position: relative;
+  text-align: right;
+  width: 40px; 
+}
+
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 10px;
+  margin-top: 50px;
+}
+
+.card {
+  text-align: left;
+  top: 0;
+  left: 100%;
+  width: 200px;
+  background-color: blue;
+  height: 500px;
+  float: right;
+  height: 80vh;
+  transition: 0.5s;
+}
+
+.card > h1 {
+  color: var(--cor0);
+  font-weight: bold;
+  margin: 0;
+  padding: 0 20px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.card > .checkout {
+  position:absolute;
+  bottom: 0;
+  width: 40vw ;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  background-color: var(--cor0);
+  height: 20px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card > .checkout > .closeShopping{
+    background-color: black;
+    color: white;
+    text-align: left;
+}
+
+.active > .card{
+  left: calc(100% - 500px);
+}
+.active > .container {
+  transform: translate(-200px);
+}
+
+*/
