@@ -1,27 +1,39 @@
 const product = [
     {
         id: 0,
-        image: 'image/gg-1.jpg',
-        title: 'Z Flip Foldable Mobile',
-        price: 120,
+        image: 'images/shopnow/asusmonitor.png',
+        title: 'ASUS',
+        price: 1300,
     },
     {
         id: 1,
-        image: 'image/hh-2.jpg',
-        title: 'Air Pods Pro',
-        price: 60,
+        image: 'images/shopnow/apple.jpg',
+        title: 'IMAC',
+        price: 2000,
     },
     {
         id: 2,
-        image: 'image/ee-3.jpg',
-        title: '250D DSLR Camera',
-        price: 230,
+        image: 'images/shopnow/dell.jpg',
+        title: 'DELL MONITOR',
+        price: 2100,
     },
     {
         id: 3,
-        image: 'image/aa-1.jpg',
-        title: 'Head Phones',
-        price: 100,
+        image: 'images/shopnow/hp.jpg',
+        title: 'HP MONITORS (2)',
+        price: 3000,
+    },
+    {
+        id: 4,
+        image: 'images/shopnow/samsung.jpg',
+        title: 'SAMSUNG MONITOR',
+        price:4000,
+    },
+    {
+        id: 5,
+        image: 'images/shopnow/android.jpg',
+        title: 'ANDROID MONITOR',
+        price:4000,
     }
 ];
 const categories = [...new Set(product.map((item)=>

@@ -56,11 +56,11 @@ section#registration{
  }
 
  section#registration > div#images{
-    background-image:url(../images/pexels-karolina-grabowska-4046997.jpg);
+    background-image:url(../images/background1.jpg);
     background-color: #5f2c82;
     height: 200px;
     background-size: cover;
-    background-position: center left;
+    background-position: center center  ;
     display: block;
  }
 

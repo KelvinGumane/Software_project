@@ -23,3 +23,88 @@
       }
       
 }
+
+@media screen and (min-width:768px) and (max-width:1199px){
+  main > .shopnow{
+    height: 400px;
+    
+  }
+
+ 
+
+  main > .shopnow2 {
+    height: 400px;
+  }
+  
+  main >.shopnow3 {
+    height: 400px;
+  }
+
+  main > .shopnow4 {
+    height: 500px;
+  }
+
+  main > .shopnow4 > p {
+
+    padding-top: 30%;
+  }
+
+  footer{
+    margin: fit;
+    
+  }
+}
+
+@media screen and (min-width:1200px){
+  main > .shopnow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction:column;
+    background-coloR:var(--cor4);
+    background-size: cover;
+    background-position: center center;
+    height: 50vh;
+  }
+
+  main > .shopnow > p {
+    
+    padding-top: 10%;
+    
+  }
+
+
+  main > .shopnow2 {
+    
+    height: 50vh;
+  }
+
+  main > .shopnow2 > p {
+  
+    padding-top: 10%;
+    
+  }
+
+  main >.shopnow3 {
+    height: 50vh;
+  }
+
+  main > .shopnow3 > p {
+ 
+    padding-top: 10%;
+   
+  }
+
+  main > .shopnow4 {
+    height: 50vh;
+  }
+
+  main > .shopnow4 > p {
+    padding-top: 10%;
+  }
+
+  footer{
+    margin-top: 75%;
+    
+  }
+}

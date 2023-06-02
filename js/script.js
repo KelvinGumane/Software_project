@@ -22,29 +22,33 @@ function validateEmail(){
 
 //function that submites the sign up
 function submit() {
-    //Getting to the main form
-    let form = document.getElementById('myfornm')
-
-    // Getting the access to the input form
-    let name = document.getElementById('username')
-    let surname = document.getElementById('surname')
-    let email = document.getElementById('email')
-    let password = document.getElementById('password')
-
-    //Get the values of the input values
-    let nameinput = name.value
-    let surnameinput = surname.value
-    let emailinput = email.value
-    let passwordinput = password.value 
-
-    if(name == '' || surname == '' || email == '' || password == '' ) {
-        console.log('Please fill all the requiremnts')
-    }else{
-        console.log('Your fornm has been submited')
+    // Getting the main form
+    let form = document.getElementById('myform');
+  
+    // Getting the input elements
+    let name = document.getElementById('username');
+    let surname = document.getElementById('surname');
+    let email = document.getElementById('email');
+    let password = document.getElementById('password');
+  
+    // Get the values of the input fields
+    let nameInput = name.value;
+    let surnameInput = surname.value;
+    let emailInput = email.value;
+    let passwordInput = password.value;
+  
+    if (nameInput.trim() === '' || surnameInput.trim() === '' || emailInput.trim() === '' || passwordInput.trim() === '') {
+      alert('Please fill all the requirements.');
+      return false;
+    } else {
+      alert('Your form has been submitted.');
+      location.href='main.html'
+      return true;
+      // You can uncomment the following line to submit the form programmatically:
+       form.submit();
     }
-
-    myform.submit()
-}
+  }
+  
 
 //function  for the login
 function login() {
@@ -53,9 +57,10 @@ function login() {
     let email = document.getElementById('email').value
     let password = document.getElementById('password').value
 
-    if(name == 'name' && surname == 'surname' && email == 'email' && password == 'password'){
+    if(name.trim() == 'name' && surname.trim() == 'surname' && email.trim() == 'email' && password.trim() == 'password'){
         //Sucessful login
-        alert('Login sucessful')
+        alert('Login sucessful');
+        location.href='main.html';
     } else{
         //failed login
         alert('One of the  inputs is incorrect! Please try again. ')
@@ -138,3 +143,24 @@ function shopbutton(){
     let shopb = document.querySelector('shopb')
     location.href ='shop.html'   
 }
+
+
+//sign in( from  first page to sign in page)
+function newuser() {
+    let newuser=document.querySelector('newuser')
+    location.href='signin.html'
+}
+
+//log in (from first page to log in page)
+function olduser(){
+    let olduser=document.querySelector('olduser')
+    location.href='login.html'
+}
+
+//Dark mode
+const modeToggle = document.getElementById('mode-toggle');
+const body = document.body;
+
+modeToggle.addEventListener('click', () => {
+  body.classList.toggle('dark-mode');
+});

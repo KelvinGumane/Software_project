@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="style/loginstyle.css">
-    <link rel="stylesheet" href="style/mediaqueries.css">
+    <link rel="stylesheet" href="style/loginmediaqueries.css">
    
 
 </head>
@@ -24,7 +24,7 @@
             
                <div id="formulario">
                    
-                   <form action="" method="post" id="loginform" onsubmit=" return validateForm()">
+                   <form action="" method="post" id="loginform" onsubmit=" return myForm()">
                       <div class="campo">
                           <p>
                               <label for="iusername">Name:</label>
@@ -45,7 +45,7 @@
                       </div>
                       <div id="submit" class="submit">
                     
-                            <input type="button" value="Login" onsubmit=" return login()">
+                            <input type="submit" value="Login" onsubmit=" return login()">
                          
                     </div>
                         <a href="passrec.html" class="botao" >

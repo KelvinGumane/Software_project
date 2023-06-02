@@ -10,9 +10,9 @@
     }
 
     section#registration > div#images{
-        background-image: url(../images/pexels-suzy-hazelwood-3652103.jpg);
+        background-image: url(../images/background2.jpg);
         background-size: cover;
-        background-position: center center;
+        background-position: right center;
         float:left;
         width: 40%;
         height: 100%;
@@ -58,7 +58,7 @@
     }
 
     section#registration > div#images{
-        background-image: url(../images/pexels-karolina-grabowska-4021773.jpg);
+        background-image: url(../images/background3.jpg);
         background-size: cover;
         background-position: center center;
         float:left;

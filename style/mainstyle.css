@@ -22,6 +22,7 @@
 
 
 body{
+  height: 100vh;
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
   display: flex;
@@ -30,6 +31,10 @@ body{
   flex-direction: column;
   width: auto;
   height: auto;
+  background-image: url(../images/background1.jpg);
+   background-position: center center;
+  background-size: cover;
+   background-repeat: repeat-y;
 
    
 
@@ -44,6 +49,11 @@ header {
  justify-content: space-between;
  flex-direction: grid;
 } 
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
 
 .logo{
   font-size: 28px;
@@ -81,11 +91,10 @@ header {
 
 main{
   height: 50vh;
-  width: 95vw;
-  background-color:white;
-  margin: auto;
+  width: 50vw;
+  margin: 20px;
   padding: 5px;
-  border-radius: 2px;
+  border-radius: 20%;
 }
 
 main > .shopnow{
@@ -93,16 +102,17 @@ main > .shopnow{
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  background-image: url(../images/SHOPNOW.jpg);
+  background-image: url(../images/iphone-1.jpg);
   background-coloR:var(--cor4);
   background-size: cover;
-  background-position: center center;
+  background-position: bottom center;
   height: 300px;
   
 }
 
 main > .shopnow > p {
-  display: block;
+  color: white;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;
@@ -111,17 +121,17 @@ main > .shopnow > p {
 }
 
 main > .shopnow > button{
-  display: block;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  display: block;
   cursor: pointer;
   justify-content: center;
-  margin: 2px auto;
+  margin-bottom:  auto;
   padding:10px 20px;
   border-radius: 5px;
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: white;
+  
 }
 
 main > .shopnow > button:hover{
@@ -129,7 +139,7 @@ main > .shopnow > button:hover{
 }
 
 main > .shopnow2 {
-  background-image: url(../images/shopnow2.jpg);
+  background-image: url(../images/headphones-2.jpg);
   background-color:white;
   background-size: cover;
   background-position: center center;
@@ -137,6 +147,7 @@ main > .shopnow2 {
 }
 
 main > .shopnow2 > p {
+  color: white;
   text-align: center;
   padding-top: 20%;
   font-weight: bold;
@@ -149,8 +160,8 @@ main > .shopnow2 > button{
   margin: 0 auto;
   padding:10px 20px;
   border-radius: 5px;
-  color: white;
-  background-color: black;
+  color: black;
+  background-color:white;
 }
 
 main > .shopnow2 > button:hover {
@@ -158,7 +169,7 @@ main > .shopnow2 > button:hover {
 }
 
 main >.shopnow3 {
-  background-image: url(../images/shopnow3.jpg);
+  background-image: url(../images/laptop-3.jpg);
   background-color: white;
   background-size: cover;
   background-position:center center;
@@ -166,6 +177,7 @@ main >.shopnow3 {
 }
 
 main > .shopnow3 > p {
+  color: white;
   text-align: center;
   padding-top: 20%;
   font-weight: bold;
@@ -178,8 +190,8 @@ main > .shopnow3 > button {
   margin: 0 auto;
   padding: 10px 20px;
   border-radius: 5px;
-  color: white;
-  background-color: black;
+  color: black;
+  background-color:white;
 }
 
 main > .shopnow3 > button:hover{
@@ -187,7 +199,7 @@ main > .shopnow3 > button:hover{
 }
 
 main > .shopnow4 {
-  background-image: url(../images/shopnow4.jpg);
+  background-image: url(../images/monitor-4.jpg);
   background-color:white;
   background-size: cover;
   background-position: center center;
@@ -195,6 +207,7 @@ main > .shopnow4 {
 }
 
 main > .shopnow4 > p {
+  color: white;
   text-align: center;
   padding-top: 20%;
 }
@@ -206,94 +219,23 @@ main > .shopnow4 > button {
   margin: 0 auto;
   padding: 10px 20px;
   border-radius: 5px;
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: white;
 }
 
 main > .shopnow4 > button:hover{
   background-color: var(--cor3);
 }
 
-
-/*
- shop cart main page 
-.container{
-  margin: auto;
-  transition: 0.5s;
-  text-align: center;
-}
-
-.container > h1 {
-    display: grid;
-    grid-template-columns: 1fr 50px;
-    margin-top: 50px;
-   
-}
-
-
-.container > .shopping{
-  position: relative;
-  text-align: right;
-  width: 40px; 
-}
-
-
-.list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 20px;
-  row-gap: 10px;
-  margin-top: 50px;
-}
-
-.card {
-  text-align: left;
-  top: 0;
-  left: 100%;
-  width: 200px;
-  background-color: blue;
-  height: 500px;
-  float: right;
-  height: 80vh;
-  transition: 0.5s;
-}
-
-.card > h1 {
-  color: var(--cor0);
-  font-weight: bold;
-  margin: 0;
-  padding: 0 20px;
-  height: 80px;
+footer{
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 150%;
+  height: 5vh;
+  width: 95%;
+  color: black;
+  background-color: grey;
+  
 }
-
-.card > .checkout {
-  position:absolute;
-  bottom: 0;
-  width: 40vw ;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  background-color: var(--cor0);
-  height: 20px;
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.card > .checkout > .closeShopping{
-    background-color: black;
-    color: white;
-    text-align: left;
-}
-
-.active > .card{
-  left: calc(100% - 500px);
-}
-.active > .container {
-  transform: translate(-200px);
-}
-
-*/
