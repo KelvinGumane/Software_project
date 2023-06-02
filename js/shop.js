@@ -1,10 +1,28 @@
 const product = [
     {
         id: 0,
-        image: 'images/shopnow/jj.jpg',
-        title: 'random photo',
+        image: 'image/gg-1.jpg',
+        title: 'Z Flip Foldable Mobile',
         price: 120,
     },
+    {
+        id: 1,
+        image: 'image/hh-2.jpg',
+        title: 'Air Pods Pro',
+        price: 60,
+    },
+    {
+        id: 2,
+        image: 'image/ee-3.jpg',
+        title: '250D DSLR Camera',
+        price: 230,
+    },
+    {
+        id: 3,
+        image: 'image/aa-1.jpg',
+        title: 'Head Phones',
+        price: 100,
+    }
 ];
 const categories = [...new Set(product.map((item)=>
     {return item}))]
@@ -56,7 +74,7 @@ function displaycart(){
                     <img class='rowimg' src=${image}>
                 </div>
                 <p style='font-size:12px;'>${title}</p>
-                <h2 style='font-size: 15px;'>$ ${price}.00</h2>`+
+                <h2 style='font-size: 15px;'>$ ${price}.00</h2>`+ 
                 "<i class='fa-solid fa-trash' onclick='delElement("+ (j++) +")'></i></div>"
             );
         }).join('');
