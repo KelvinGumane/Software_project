@@ -1,116 +1,299 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-/*font-family: 'Open Sans', sans-serif;*/
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Pangolin&display=swap');
-/*font-family: 'Pangolin', cursive; */
-
-:root{
-    --cor0:#E0BF23;
-    --cor2:#47F0AF;
-    --cor3:#370D94;
-     --cor4:#A541E0;
-     --cor5:#E06E35;
-  }
-  
-*/{
+*{
     margin: 0px;
     padding: 0px;
+    list-style: none;
+    text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    width: auto;
+
 }
+:root{
+  --cor0:#E0BF23;
+  --cor2:#47F0AF;
+  --cor3:#370D94;
+   --cor4:#A541E0;
+   --cor5:#E06E35;
+}
+
+
 body{
-    background-image: linear-gradient(to bottom, rgba(219, 143, 72, 0.187),rgb(74, 39, 39));
-    height: 100vh;
-    width:100vw;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+
+   
+
+}
+
+header {
+ height: 80px;
+ width: 100%;
+ background-color: var(--cor0);
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ flex-direction: grid;
+} 
+
+.logo{
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.hamburger{
+  display: none;
+}
+.nav_bar > ul {
+  display: flex;
+ 
+  
+}
+
+.nav_bar > ul > li > a {
+  display: block;
+  color: white;
+  font-size: 20px;
+  padding: 20px 50px;
+  border-radius: 50px;
+  transition: 0.2s;
+  margin:0 5px;
+}
+
+.nav_bar  > ul > li > a:hover{
+  color: white;
+  background: black;
+}
+
+.nav_bar >  ul > li > a.active{
+  background:black;
+
 }
 
 main{
-    position: relative;
-    height: 100vh;
-    width: 100vw;
+  height: 50vh;
+  width: 95vw;
+  background-color:white;
+  margin: auto;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+main > .shopnow{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(../images/SHOPNOW.jpg);
+  background-coloR:var(--cor4);
+  background-size: cover;
+  background-position: center center;
+  height: 300px;
+  
+}
+
+main > .shopnow > p {
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding-top: 20%;
+  font-weight: Bold;
+}
+
+main > .shopnow > button{
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  display: block;
+  cursor: pointer;
+  justify-content: center;
+  margin: 2px auto;
+  padding:10px 20px;
+  border-radius: 5px;
+  color: white;
+  background-color: black;
+}
+
+main > .shopnow > button:hover{
+  background-color: var(--cor3);
+}
+
+main > .shopnow2 {
+  background-image: url(../images/shopnow2.jpg);
+  background-color:white;
+  background-size: cover;
+  background-position: center center;
+  height: 300px;
+}
+
+main > .shopnow2 > p {
+  text-align: center;
+  padding-top: 20%;
+  font-weight: bold;
+}
+
+main > .shopnow2 > button{
+  display: block;
+  cursor: pointer;
+  justify-content: center;
+  margin: 0 auto;
+  padding:10px 20px;
+  border-radius: 5px;
+  color: white;
+  background-color: black;
+}
+
+main > .shopnow2 > button:hover {
+  background-color: var(--cor3);
+}
+
+main >.shopnow3 {
+  background-image: url(../images/shopnow3.jpg);
+  background-color: white;
+  background-size: cover;
+  background-position:center center;
+  height: 300px;
+}
+
+main > .shopnow3 > p {
+  text-align: center;
+  padding-top: 20%;
+  font-weight: bold;
+}
+
+main > .shopnow3 > button {
+  display: block;
+  cursor: pointer;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  background-color: black;
+}
+
+main > .shopnow3 > button:hover{
+  background-color: var(--cor3);
+}
+
+main > .shopnow4 {
+  background-image: url(../images/shopnow4.jpg);
+  background-color:white;
+  background-size: cover;
+  background-position: center center;
+  height: 250px;
+}
+
+main > .shopnow4 > p {
+  text-align: center;
+  padding-top: 20%;
+}
+
+main > .shopnow4 > button {
+  display: block;
+  cursor: pointer;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  background-color: black;
+}
+
+main > .shopnow4 > button:hover{
+  background-color: var(--cor3);
 }
 
 
-section#registration > div#regform{
-    text-align: center;
+/*
+ shop cart main page 
+.container{
+  margin: auto;
+  transition: 0.5s;
+  text-align: center;
 }
 
-
-section#registration{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    overflow: hidden;
-    transform: translate(-50%, -50%);
-    
-    background-color: white;
-    height: 80vh;
-    width: 300px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.406);
-
-    transition: width .3s, height .3s;
-    transition-timing-function: ease;
- }
-
- section#registration > div#images{
-    background-image:url(../images/pexels-karolina-grabowska-4046997.jpg);
-    background-color: #5f2c82;
-    height: 200px;
-    background-size: cover;
-    background-position: center left;
-    display: block;
- }
-
- section#registration > div#regform{
-    display: block;
-    padding: 10px;
- }
-
-
- form > div.campo{
-    display: block;
-    height: 17vh;
-    border-radius: 5px;
-    margin: 10px 0px;
- }
-
- div.campo > label > input{
-    display: none;
-
+.container > h1 {
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    margin-top: 50px;
    
- }
-
- div.submit > input{
-    margin: auto;
-    height: 100%;
-    width: 100%;
-    cursor: pointer;
- }
-
-
-
-form >div.submit{
-       display: block;
-       font: 1em;
-       width: 100%;
-       height:30px;
-        color:rgba(192, 199, 255, 0.219); ;
-       border-radius:10px;
-       cursor: pointer;
-       
 }
 
 
-form > a.botao{
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    padding: 10px;
-    margin: 20px;
-    background-color: rgba(192, 199, 255, 0.219);
-    border-radius: 5px;
-    
+.container > .shopping{
+  position: relative;
+  text-align: right;
+  width: 40px; 
 }
+
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 10px;
+  margin-top: 50px;
+}
+
+.card {
+  text-align: left;
+  top: 0;
+  left: 100%;
+  width: 200px;
+  background-color: blue;
+  height: 500px;
+  float: right;
+  height: 80vh;
+  transition: 0.5s;
+}
+
+.card > h1 {
+  color: var(--cor0);
+  font-weight: bold;
+  margin: 0;
+  padding: 0 20px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.card > .checkout {
+  position:absolute;
+  bottom: 0;
+  width: 40vw ;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  background-color: var(--cor0);
+  height: 20px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card > .checkout > .closeShopping{
+    background-color: black;
+    color: white;
+    text-align: left;
+}
+
+.active > .card{
+  left: calc(100% - 500px);
+}
+.active > .container {
+  transform: translate(-200px);
+}
+
+*/
