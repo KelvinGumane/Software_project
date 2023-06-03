@@ -145,10 +145,24 @@ const validatelogin = () => {
 
 //shopbutton
 function shopbutton(){
-  let shopb = document.querySelector('shopb')
-  location.href ='shop.html'   
+  let shopb = document.querySelector('shopb');
+  location.href ='shop.html';
 }
 
+function shopbutton1(){
+    let shop1 = document.querySelector('shopb1');
+    location.href = 'shop1.html';
+}
+
+function shopbutton2(){
+    let shop2 = document.querySelector('shop2');
+    location.href = 'shop2.html'
+}
+
+function shopbutton3(){
+    let shop3 = document.querySelector('shop3');
+    location.href = 'shop3.html'
+}
 
 //sign in( from  first page to sign in page)
 function newuser() {
