@@ -90,15 +90,3 @@ header {
 
 
 
-footer{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-  margin-top: 150%;
-  height: 5vh;
-  width: 95%;
-  color: black;
-  background-color: grey;
-  
-}
