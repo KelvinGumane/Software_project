@@ -5,7 +5,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-#logform {
+#form {
     width: 300px;
     margin: 20vh auto 0 auto;
     padding: 20px;
@@ -14,12 +14,12 @@ body {
     font-size: 12px;
 }
 
-#logform h1 {
+#form h1 {
     color: #0f2027;
     text-align: center;
 }
 
-#logform button {
+#form button {
     padding: 10px;
     margin-top: 10px;
     width: 100%;
