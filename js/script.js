@@ -1,166 +1,121 @@
-const { BlockList } = require('net')
+const form = document.getElementById('form');
+const username = document.getElementById('username');
+const email = document.getElementById('email');
+const password = document.getElementById('password');
+const password2 = document.getElementById('password2');
 
-function validateEmail(){
-    let email = document.getElementById('email')
+form.addEventListener('submit', e => {
+    e.preventDefault();
 
-    //Get the value of the email inputt
-    const emailInput = email.value
-    
-    //Regular expression pattern for validating an email
-    const emailPattern =  /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    validateInputs();
+});
 
-    //Check if email is valid
-    if(emailPattern.test(email)) {
-        // Email is valid
-        console.log('Email is valid')
-    }else {
-        //Email is invalid
-        console.log('Email is invalid')
-    }
+const setError = (element, message) => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
 
+    errorDisplay.innerText = message;
+    inputControl.classList.add('error');
+    inputControl.classList.remove('success')
 }
 
-//function that submites the sign up
-function submit() {
-    // Getting the main form
-    let form = document.getElementById('myform');
-  
-    // Getting the input elements
-    let name = document.getElementById('username');
-    let surname = document.getElementById('surname');
-    let email = document.getElementById('email');
-    let password = document.getElementById('password');
-  
-    // Get the values of the input fields
-    let nameInput = name.value;
-    let surnameInput = surname.value;
-    let emailInput = email.value;
-    let passwordInput = password.value;
-  
-    if (nameInput.trim() === '' || surnameInput.trim() === '' || emailInput.trim() === '' || passwordInput.trim() === '') {
-      alert('Please fill all the requirements.');
-      return false;
+const setSuccess = element => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+
+    errorDisplay.innerText = '';
+    inputControl.classList.add('success');
+    inputControl.classList.remove('error');
+};
+
+const isValidEmail = email => {
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
+
+const validateInputs = () => {
+    const usernameValue = username.value.trim();
+    const emailValue = email.value.trim();
+    const passwordValue = password.value.trim();
+    const password2Value = password2.value.trim();
+
+    if(usernameValue === '') {
+        setError(username, 'Username is required');
     } else {
-      alert('Your form has been submitted.');
-      location.href='main.html'
-      return true;
-      // You can uncomment the following line to submit the form programmatically:
-       form.submit();
+        setSuccess(username);
     }
+
+    if(emailValue === '') {
+        setError(email, 'Email is required');
+    } else if (!isValidEmail(emailValue)) {
+        setError(email, 'Provide a valid email address');
+    } else {
+        setSuccess(email);
+    }
+
+    if(passwordValue === '') {
+        setError(password, 'Password is required');
+    } else if (passwordValue.length < 8 ) {
+        setError(password, 'Password must be at least 8 character.')
+    } else {
+        setSuccess(password);
+    }
+
+    if(password2Value === '') {
+        setError(password2, 'Please confirm your password');
+    } else if (password2Value !== passwordValue) {
+        setError(password2, "Passwords doesn't match");
+    } else {
+        setSuccess(password2);
+    }
+
+};
+
+
+//login
+form.addEventListener('submit', e => {
+  e.preventDefault();
+
+  validateLogin();
+});
+
+
+const validateLogin= validateInputs => {
+  const usernameValue = username.value.trim();
+  const emailValue = email.value.trim();
+  const passwordValue = password.value.trim();
+  const password2Value = password2.value.trim();
+
+  if(usernameValue === '') {
+      setError(username, 'Username is required');
+  } else {
+      setSuccess(username);
   }
-  
 
-//function  for the login
-function login() {
-    let name = document.getElementById('username').value
-    let surname = document.getElementById('surname').value
-    let email = document.getElementById('email').value
-    let password = document.getElementById('password').value
+  if(emailValue === '') {
+      setError(email, 'Email is required');
+  } else if (!isValidEmail(emailValue)) {
+      setError(email, 'Provide a valid email address');
+  } else {
+      setSuccess(email);
+  }
 
-    if(name.trim() == 'name' && surname.trim() == 'surname' && email.trim() == 'email' && password.trim() == 'password'){
-        //Sucessful login
-        alert('Login sucessful');
-        location.href='main.html';
-    } else{
-        //failed login
-        alert('One of the  inputs is incorrect! Please try again. ')
-    }
-}
+  if(passwordValue === '') {
+      setError(password, 'Password is required');
+  } else if (passwordValue.length < 8 ) {
+      setError(password, 'Password must be at least 8 character.')
+  } else {
+      setSuccess(password);
+  }
 
-//Password recovery
+  if(password2Value === '') {
+      setError(password2, 'Please confirm your password');
+  } else if (password2Value !== passwordValue) {
+      setError(password2, "Passwords doesn't match");
+  } else {
+      setSuccess(password2);
+  }
 
-//GEnerate random token
-function generatetoken() {
-    let token = "";
-    let characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-    let tokenLength = 30;
-
-    for (var i = 0; i < tokenLength; i++) {
-        token += characters.charAt(Math.floor(Math.random() * characters.length));
-      }
-      
-      return token
-}
-
-//Password recovery code
-function recoverPassword() {
-    var email = document.getElementById("email").value;
-    
-    // Check if email is valid and exists in your system
-    // .
-    // server.js
-
-const express = require('express');
-const app = express();
-
-// Endpoint for email verification
-app.get('/verify-email', (req, res) => {
-  const email = req.query.email;
-
-  // Perform email verification logic here
-  // ...
-
-  // Example: Simulating email existence check
-  const emailExists = simulateEmailCheck(email);
-
-  res.json({ exists: emailExists });
-});
-
-// Simulated email existence check
-function simulateEmailCheck(email) {
-  // Place your email verification logic here
-  // This is just a placeholder example
-  const existingEmails = ['example@gmail.com', 'test@yahoo.com'];
-  return existingEmails.includes(email);
-}
-
-// Start the server
-const port = 3000;
-app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
-});
-
-    
-    if (emailIsValid && emailExists) {
-      var token = generateToken();
-      
-      // Store the token in the browser's local storage
-      localStorage.setItem("passwordResetToken", token);
-      
-      // Redirect the user to the password reset page
-      window.location.href = "password-reset.html";
-    } else {
-      alert("Invalid email address. Please try again.")
- }
-}
+};
 
 
-
-//main page
-
-//shopbutton
-function shopbutton(){
-    let shopb = document.querySelector('shopb')
-    location.href ='shop.html'   
-}
-
-
-//sign in( from  first page to sign in page)
-function newuser() {
-    let newuser=document.querySelector('newuser')
-    location.href='signin.html'
-}
-
-//log in (from first page to log in page)
-function olduser(){
-    let olduser=document.querySelector('olduser')
-    location.href='login.html'
-}
-
-//Dark mode
-const modeToggle = document.getElementById('mode-toggle');
-const body = document.body;
-
-modeToggle.addEventListener('click', () => {
-  body.classList.toggle('dark-mode');
-});
