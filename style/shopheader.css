@@ -34,14 +34,10 @@ body{
    background-position: center center;
   background-size: cover;
    background-repeat: repeat-y;
-
-   
-
 }
 
-
 header {
- height: 80px;
+ height: 100px;
  width: 100%;
  background-color: goldenrod;
  display: flex;
@@ -50,10 +46,8 @@ header {
  flex-direction: grid;
 } 
 
-.dark-mode {
-  background-color: #333;
-  color: #fff;
-}
+
+
 
 .logo{
   font-size: 28px;

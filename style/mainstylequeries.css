@@ -10,6 +10,11 @@
   
 
 @media screen and (max-width:768px){
+
+  body{
+    height: 100vh;
+    width: 100%;
+  }
   
 
     .nav_bar > ul > li > a {
