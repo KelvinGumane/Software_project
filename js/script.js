@@ -142,8 +142,28 @@ const validatelogin = () => {
 };
 
 
+//log in (from first page to sign in page)
+function signin(){
+    let signin = document.querySelector('signin')
+    location.href= 'signin.html'
+}
 
-//shopbutton
+//sign in( from  first page to login page)
+function login() {
+  let newuser=document.querySelector('login')
+  location.href='login.html'
+}
+
+//go shop (from first page to go shop)
+function goshop() {
+    let goshop = document.querySelector('goshop')
+    location.href = 'main.html'
+}
+
+
+
+
+//shopbutton( how each button connects to the rights pages)
 function shopbutton(){
   let shopb = document.querySelector('shopb');
   location.href ='shop.html';
@@ -164,17 +184,8 @@ function shopbutton3(){
     location.href = 'shop3.html'
 }
 
-//sign in( from  first page to sign in page)
-function newuser() {
-  let newuser=document.querySelector('newuser')
-  location.href='signin.html'
-}
 
-//log in (from first page to log in page)
-function olduser(){
-  let olduser=document.querySelector('olduser')
-  location.href='login.html'
-}
+
 
 //Dark mode
 const modeToggle = document.getElementById('mode-toggle');
