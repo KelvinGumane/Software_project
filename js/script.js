@@ -142,19 +142,19 @@ const validatelogin = () => {
 };
 
 
-//log in (from first page to sign in page)
+//login connection (from first page to sign in page)
 function signin(){
     let signin = document.querySelector('signin')
     location.href= 'signin.html'
 }
 
-//sign in( from  first page to login page)
+//sign in connection( from  first page to login page)
 function login() {
   let newuser=document.querySelector('login')
   location.href='login.html'
 }
 
-//go shop (from first page to go shop)
+//go shop connection (from first page to go shop)
 function goshop() {
     let goshop = document.querySelector('goshop')
     location.href = 'main.html'
