@@ -39,7 +39,7 @@ body{
 header {
  height: 30%;
  width: 100%;
- background-color: #E89643;
+ background-color: goldenrod;
  display: flex;
  align-items: center;
  justify-content: space-between;
