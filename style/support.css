@@ -21,7 +21,7 @@
 
 
 body{
-  font-family: 'Open Sans', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
   display: flex;
   align-items: center;
@@ -30,13 +30,13 @@ body{
 }
 
 header {
- height: 20px;
- width: 100%;
- background-color: goldenrod;
- display: flex;
- align-items: center;
- justify-content: space-between;
- flex-direction: grid;
+height: 30%;
+width: 100%;
+background-color: goldenrod;
+display: flex;
+align-items:center;
+justify-content: space-between;
+flex-direction: grid;
 } 
 
 
@@ -45,6 +45,10 @@ header {
   font-weight: bold;
   height: 150px;
   
+}
+
+.head > .title{
+    margin: 20px;
 }
 
 .logo{
@@ -80,4 +84,30 @@ header {
   background:black;
 
 }
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 15%;
+    padding: 20px;
+    border:1px solid black;
+    box-shadow: 1px 1px black;
+    justify-content: space-between;
+}
+
+main > h1 {
+    text-align: center;
+    padding: 10px;
+    font-weight: bolder;
+}
+
+main > p{
+    font-weight: bold;
+}
+
+
+
+
 
