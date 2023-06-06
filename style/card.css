@@ -7,9 +7,15 @@
 }
 body{
 	height: 100vh;
-	display: flex;
+	display: block;
 	align-items: center;
 	justify-content: center;
+}
+
+
+main{
+	margin-top: 5%;
+	margin-left: 20%;
 }
 .container{
 	display: flex;
@@ -150,4 +156,17 @@ button:hover{
 	background-color: #444;
 	color: white;
 	cursor: pointer;
+}
+
+
+button > .home {
+    display: block;
+    width: 15%;
+	border: none;
+	height: 50px;
+	border-radius: 3px;
+	margin-top: 30px;
+	font-size: 18px;
+	color: #444;
+	background-color: yellow;
 }
