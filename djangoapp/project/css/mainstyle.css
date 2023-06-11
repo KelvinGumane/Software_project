@@ -1,0 +1,243 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    width: auto;
+
+}
+:root{
+  --cor0:#E0BF23;
+  --cor2:#47F0AF;
+  --cor3:#370D94;
+   --cor4:#A541E0;
+   --cor5:#E06E35;
+}
+
+
+body{
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background-image: url(../images/first.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+header {
+ height: 30%;
+ width: 100%;
+ background-color: goldenrod;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ flex-direction: grid;
+} 
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.head{
+  font-size: 28px;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.hamburger{
+  display: none;
+}
+.nav_bar > ul {
+  display: flex;
+ 
+  
+}
+
+.nav_bar > ul > li > a {
+  display: block;
+  color: white;
+  font-size: 20px;
+  padding: 20px 50px;
+  border-radius: 50px;
+  transition: 0.2s;
+  margin:0 5px;
+}
+
+.nav_bar  > ul > li > a:hover{
+  color: white;
+  background: black;
+}
+
+main{
+  width: 50vw;
+  margin: 20px;
+  padding: 5px;
+  border-radius: 20%;
+}
+
+.shops{
+  width: 100%;
+  margin: 20px;
+  padding: 5px;
+  border-radius: 20%;
+  
+}
+
+.shops> .shopnow{
+  background-image: url(../images/monitor-4.jpg);
+  background-coloR:black;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 30px;
+  height: 400px;
+ 
+
+  
+}
+
+.shops > .shopnow > p {
+  color: white;
+  text-align: center;
+  padding-top: 10%;
+  font-weight: Bold;
+}
+
+.shops > .shopnow > button{
+  display: block;
+  cursor: pointer;
+  padding:10px 20px;
+  margin: 0 auto 0 auto;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  background-color: goldenrod;
+  
+}
+
+.shops > .shopnow > button:hover{
+  color: white;
+  background-color: var(--cor3);
+}
+
+.shops> .shopnow2 {
+  background-image: url(../images/headphones-2.jpg);
+  background-color:white;
+  background-size: cover;
+  background-position: center center;
+  height: 400px;
+  margin-bottom: 30px;
+}
+
+.shops > .shopnow2 > p {
+  color: white;
+  text-align: center;
+  padding-top: 10%;
+  font-weight: bold;
+}
+
+.shops > .shopnow2 > button{
+  display: block;
+  cursor: pointer;
+  margin: 0 auto;
+  padding:10px 20px;
+  border-radius: 5px;
+  color: black;
+  background-color:goldenrod;
+}
+
+.shops > .shopnow2 > button:hover {
+  color: white;
+  background-color: var(--cor3);
+}
+
+.shops >.shopnow3 {
+  background-image: url(../images/laptop-3.jpg);
+  background-color: white;
+  background-size: cover;
+  background-position:center center;
+  margin-bottom: 30px;
+  height: 400px;
+}
+
+.shops > .shopnow3 > p {
+  color: white;
+  text-align: center;
+  padding-top: 10%;
+  font-weight: bold;
+}
+
+.shops > .shopnow3 > button {
+  display: block;
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: black;
+  background-color:goldenrod;
+}
+
+.shops> .shopnow3 > button:hover{
+  color: white;
+  background-color: var(--cor3);
+}
+
+.shops > .shopnow4 {
+  background-image: url(../images/iphone-1.jpg);
+ 
+  background-color:white;
+  background-size: cover;
+  background-position: center center;
+  height: 400px;
+}
+
+.shops > .shopnow4 > p {
+  color: white;
+  text-align: center;
+  padding-top: 10%;
+}
+
+.shops > .shopnow4 > button {
+  display: block;
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: black;
+  background-color: goldenrod;
+}
+
+.shops > .shopnow4 > button:hover{
+  color: white;
+  background-color: var(--cor3);
+}
+
+ .payment{
+  display: block;
+  cursor: pointer;
+  margin: 20 auto;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: black;
+  width: 20%;
+}
+
+
+
+
+
+
+
+
+
