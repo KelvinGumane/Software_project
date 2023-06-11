@@ -4,8 +4,6 @@ from django.http import HttpResponse
 #request -> response
 #request handler
 
-def say_hello(request):
-    #pull data from db
-    #transform
-    #send email
-    return render(request, 'signin.html')
+
+def first(request):
+    return render(request,'firstpage.html')
